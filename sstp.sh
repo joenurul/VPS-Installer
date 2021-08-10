@@ -62,9 +62,8 @@ iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save > /dev/null
 netfilter-persistent reload > /dev/null
 #input perintah sstp
-wget -O /usr/bin/add-sstp https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/add-sstp.sh && chmod +x /usr/bin/add-sstp
-wget -O /usr/bin/del-sstp https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/del-sstp.sh && chmod +x /usr/bin/del-sstp
-wget -O /usr/bin/cek-sstp https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/cek-sstp.sh && chmod +x /usr/bin/cek-sstp
-wget -O /usr/bin/renew-sstp https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/main/renew-sstp.sh && chmod +x /usr/bin/renew-sstp
+wget -O /usr/bin/add-sstp https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/add-sstp.sh && chmod +x /usr/bin/add-sstp
+wget -O /usr/bin/del-sstp https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/del-sstp.sh && chmod +x /usr/bin/del-sstp
+wget -O /usr/bin/cek-sstp https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/cek-sstp.sh && chmod +x /usr/bin/cek-sstp
+wget -O /usr/bin/renew-sstp https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/renew-sstp.sh && chmod +x /usr/bin/renew-sstp
 rm -f /root/sstp.sh
-
