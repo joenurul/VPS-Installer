@@ -3,7 +3,7 @@
 # ====================================
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/edu-ssh https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/proxy-template.py
+wget -q -O /usr/local/bin/edu-ssh https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/proxy-template.py
 chmod +x /usr/local/bin/edu-ssh
 
 # Installing Service
@@ -58,7 +58,7 @@ systemctl restart edussh-tls
 # =================================
 
 # Getting Ovpn Ws Template
-wget -q -O /usr/local/bin/edu-ovpn https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/edu-op.py
+wget -q -O /usr/local/bin/edu-ovpn https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/edu-op.py
 chmod +x /usr/local/bin/edu-ovpn
 
 
