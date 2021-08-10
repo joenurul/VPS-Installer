@@ -11,7 +11,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
-IZIN=$( curl https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/ipvps | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/ipvps | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
@@ -209,7 +209,7 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
 #OpenVPN
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/vpn.sh && chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/vpn.sh && chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -264,46 +264,46 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/add-host.sh"
-wget -O about "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/about.sh"
-wget -O menu "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/member.sh"
-wget -O delete "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/renew.sh"
-wget -O autokill "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/tendang.sh"
-wget -O clear-log "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/clear-log.sh"
-wget -O change-port "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/port-vless.sh"
-wget -O wbmn "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/webmin.sh"
-wget -O xp "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/xp.sh"
-wget -O bannerku "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/bannerku"
-wget -O bbr "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/bbr.sh"
-wget -O menu "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/menu.sh"
-wget -O trojaan "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/trojaan.sh"
-wget -O vleess "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/vleess.sh"
-wget -O wgr "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/wgr.sh"
-wget -O l2tp "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/l2tp.sh"
-wget -O v2raay "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/v2raay.sh"
-wget -O ssh "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/ssh.sh"
-wget -O sstpp "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/sstpp.sh"
-wget -O ssssr "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/menu-all/ssssr.sh"
+wget -O add-host "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/about.sh"
+wget -O menu "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/member.sh"
+wget -O delete "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/restart.sh"
+wget -O speedtest "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/ram.sh"
+wget -O renew "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/renew.sh"
+wget -O autokill "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/tendang.sh"
+wget -O clear-log "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/clear-log.sh"
+wget -O change-port "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/change.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/port-ssl.sh"
+wget -O port-wg "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/port-wg.sh"
+wget -O port-tr "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/port-tr.sh"
+wget -O port-sstp "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/port-sstp.sh"
+wget -O port-squid "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/port-squid.sh"
+wget -O port-ws "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/port-vless.sh"
+wget -O wbmn "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/webmin.sh"
+wget -O xp "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/xp.sh"
+wget -O bannerku "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/bannerku"
+wget -O bbr "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/bbr.sh"
+wget -O menu "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/menu.sh"
+wget -O trojaan "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/trojaan.sh"
+wget -O vleess "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/vleess.sh"
+wget -O wgr "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/wgr.sh"
+wget -O l2tp "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/l2tp.sh"
+wget -O v2raay "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/v2raay.sh"
+wget -O ssh "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/ssh.sh"
+wget -O sstpp "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/sstpp.sh"
+wget -O ssssr "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/menu-all/ssssr.sh"
 chmod +x add-host
 chmod +x script-info
 chmod +x menu
@@ -392,22 +392,22 @@ clear
 
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install edu
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/edu.sh && chmod +x edu.sh && ./edu.sh
-wget https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/edu.sh && chmod +x edu.sh && ./edu.sh
+wget https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
 rm -f /root/wg.sh
@@ -433,7 +433,7 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl enable autosett
-wget -O /etc/set.sh "https://raw.githubusercontent.com/ADITYAH2/gaspoll/main/set.sh"
+wget -O /etc/set.sh "https://raw.githubusercontent.com/GarudaProjects/VPS-Installer/main/set.sh"
 chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
