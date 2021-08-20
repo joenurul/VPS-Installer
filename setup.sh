@@ -12,7 +12,6 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 echo -e "${green}Permission Accepted...${NC}"
-
 echo -e "${red}Permission Denied!${NC}";
 echo "Please Contact Admin"
 rm -f setup.sh
